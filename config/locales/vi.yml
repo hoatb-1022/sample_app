@@ -1,0 +1,19 @@
+vi:
+  global:
+    welcome: "Chào mừng đến với ứng dụng của tôi"
+    rails-tut-app: "Ứng dụng mẫu để học Ruby on Rails"
+  static_pages:
+    home:
+      title: "Trang chủ"
+      desc_html: "Đây là trang chủ của ứng dụng mẫu
+                  <a href=\"http://www.railstutorial.org/\" target=\"_blank\">Hướng dẫn học Ruby on Rails</a>
+                  ."
+    help:
+      title: "Hỗ trợ"
+      desc_html: "Xem thêm hướng dẫn học Ruby on Rails tại
+                  <a href=\"http://www.railstutorial.org/help\" target=\"_blank\">Trang hỗ trỗ hướng dẫn học Rails</a>.
+                  Để nhận sự hỗ trợ cho ứng dụng mẫu này, xem ngay
+                  <a href=\"http://www.railstutorial.org/book\" target=\"_blank\">
+                    <em>Hướng dẫn học Ruby on Rails</em> book
+                  </a>
+                  ."
