@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title><%= full_title yield(:title) %></title>
-  <%= csrf_meta_tags %>
-  <%= csp_meta_tag %>
+  <head>
+    <title><%= full_title yield(:title) %></title>
 
-  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload" %>
-  <%= javascript_pack_tag "application", "data-turbolinks-track": "reload" %>
-</head>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
 
-<body>
-<%= yield %>
-</body>
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload" %>
+    <%= javascript_pack_tag "application", "data-turbolinks-track": "reload" %>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,700;1,800&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <%= render "layouts/header" %>
+    <div class="w-100">
+      <%= yield %>
+    </div>
+  </body>
 </html>

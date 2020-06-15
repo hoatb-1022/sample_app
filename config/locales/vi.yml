@@ -1,13 +1,19 @@
 vi:
   global:
-    welcome: "Chào mừng đến với ứng dụng của tôi"
     rails-tut-app: "Ứng dụng mẫu để học Ruby on Rails"
+    header:
+      brand: "Ứng dụng mẫu"
+      home: "Trang chủ"
+      help: "Hỗ trợ"
+      login: "Đăng nhập"
   static_pages:
     home:
       title: "Trang chủ"
       desc_html: "Đây là trang chủ của ứng dụng mẫu
                   <a href=\"http://www.railstutorial.org/\" target=\"_blank\">Hướng dẫn học Ruby on Rails</a>
                   ."
+      sign-up-now: "Đăng ký ngay!"
+      welcome: "Chào mừng đến với Ứng dụng mẫu"
     help:
       title: "Hỗ trợ"
       desc_html: "Xem thêm hướng dẫn học Ruby on Rails tại
