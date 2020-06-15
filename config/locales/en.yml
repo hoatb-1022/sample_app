@@ -1,2 +1,19 @@
 en:
-  welcome: "Welcome To My App"
+  global:
+    welcome: "Welcome to my application"
+    rails-tut-app: "Ruby on Rails sample tutorial application"
+  static_pages:
+    home:
+      title: "Home"
+      desc_html: "This is the home page for the
+                  <a href=\"http://www.railstutorial.org/\" target=\"_blank\">Ruby on Rails Tutorial</a>
+                  sample application."
+    help:
+      title: "Help"
+      desc_html: "Get help on the Ruby on Rails Tutorial at the
+                  <a href=\"http://www.railstutorial.org/help\" target=\"_blank\">Rails Tutorial help page</a>.
+                  To get help on this sample app, see the
+                  <a href=\"http://www.railstutorial.org/book\" target=\"_blank\">
+                    <em>Ruby on Rails Tutorial</em> book
+                  </a>
+                  ."

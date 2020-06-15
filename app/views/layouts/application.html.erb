@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= t "welcome" %>></title>
+  <title>
+    <%= yield :title %> | <%= t "global.rails-tut-app" %>
+  </title>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
 
