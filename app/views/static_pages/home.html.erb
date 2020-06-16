@@ -1,5 +1,8 @@
 <% provide :title, t(".title") %>
-<h1><%= t ".title" %></h1>
-<p>
-  <%= t ".desc_html" %>
-</p>
+<div id="home-jumbo" class="jumbotron text-center">
+  <h1 class="display-4 mb-3"><%= t ".welcome" %></h1>
+  <p class="lead">
+    <%= t ".desc_html" %>
+  </p>
+  <%= link_to t(".sign-up-now"), "#", class: "btn btn-primary" %>
+</div>

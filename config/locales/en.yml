@@ -1,13 +1,19 @@
 en:
   global:
-    welcome: "Welcome to my application"
-    rails-tut-app: "Ruby on Rails sample tutorial application"
+    rails-tut-app: "Ruby on Rails sample tutorial app"
+    header:
+      brand: "Sample App"
+      home: "Home"
+      help: "Help"
+      login: "Log in"
   static_pages:
     home:
       title: "Home"
       desc_html: "This is the home page for the
                   <a href=\"http://www.railstutorial.org/\" target=\"_blank\">Ruby on Rails Tutorial</a>
                   sample application."
+      sign-up-now: "Sign up now!"
+      welcome: "Welcome to the Sample App"
     help:
       title: "Help"
       desc_html: "Get help on the Ruby on Rails Tutorial at the
