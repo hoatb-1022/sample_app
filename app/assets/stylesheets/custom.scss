@@ -1,38 +1,74 @@
+@import "bootstrap";
 @import "colors";
+@import "variables";
+@import "mixins";
 
 /* universal */
 html, body {
-  font-family: "Montserrat", sans-serif !important;
-  font-size: .9rem;
+  width: 100vw;
+  height: 100vh;
 
   padding: 0;
   margin: 0;
+
+  overflow-x: hidden;
   scroll-behavior: smooth;
+
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 /* header */
 #header {
-  background-image: -webkit-linear-gradient(to right, $color-gradient-primary, #4b1944, #611d41, #74253a, $color-gradient-secondary);
-  background-image: -moz-linear-gradient(to right, $color-gradient-primary, #4b1944, #611d41, #74253a, $color-gradient-secondary);
-  background-image: linear-gradient(to right, $color-gradient-primary, #4b1944, #611d41, #74253a, $color-gradient-secondary);
+  height: $navbar-height;
 
-  -webkit-box-shadow: 0 10px 37px -5px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 0 10px 37px -5px rgba(0, 0, 0, 0.8);
-  box-shadow: 0 10px 37px -5px rgba(0, 0, 0, 0.8);
+  @include has-gradient-bg(linear-gradient(to right, $color-gradient-primary, #4b1944, #611d41, #74253a, $color-gradient-secondary));
+  @include has-box-shadow(0 10px 37px -5px rgba(0, 0, 0, 0.3));
 }
 
 #logo {
   font-size: 1.7em;
   font-weight: bold;
   text-transform: uppercase;
-  transition: all 500ms ease-in-out;
+
+  transition: $transition-base;
 
   &:hover {
     letter-spacing: 5px;
   }
 }
 
-/* homepage */
+/* forms */
+#error_explanation {
+  color: $red;
+
+  ul {
+    color: $red;
+    margin: 0 0 30px;
+  }
+}
+
+.field_with_errors {
+  .form-control {
+    color: $red;
+    border-color: $red;
+    outline-color: $red;
+
+    &:focus {
+      border-color: $red;
+      box-shadow: 0 0 0 .2rem rgba($red, .25);
+    }
+  }
+}
+
+/* app content */
+.app-content {
+  width: 100%;
+  height: 100%;
+
+  padding-top: $navbar-height;
+}
+
+/* home page */
 #home-jumbo {
   position: relative;
   border-radius: 0;
@@ -40,18 +76,100 @@ html, body {
   background-color: rgba(0, 0, 0, .65);
 
   &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-
-    width: 100%;
-    height: 100%;
+    @include overlay-after-psuedo;
 
     background-image: asset_url("home-jumbo-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+  }
+}
+
+/* show page */
+#show-page {
+  aside {
+    .user_info {
+      .gravatar {
+        border-radius: 50%;
+
+        width: 60px;
+        height: auto;
+      }
+
+      &--name {
+        font-weight: 600;
+        font-size: .95em;
+
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+/* new page or sign-up page */
+#new-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  background-image: asset_url("home-jumbo-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .signup-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: block;
+    width: 500px;
+    height: auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    @include has-box-shadow($box-shadow);
+
+    border-radius: $border-radius;
+
+    small {
+      display: block;
+      margin-bottom: 0.5rem;
+
+      font-weight: 500;
+
+      color: $text-muted;
+    }
+
+    h2 {
+      font-weight: 600;
+
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+
+      color: $color-primary;
+    }
+
+    .btn-confirm-signup {
+      margin-top: 10px;
+
+      @include has-gradient-bg(linear-gradient(to right, #301844, #4b1944, #611d41, #74253a, #813232));
+
+      background-size: 200% 100%;
+
+      color: white;
+
+      transition: $transition-base;
+
+      &:hover {
+        background-position: 100% 0;
+        @include has-box-shadow($box-shadow);
+
+        font-weight: 500;
+      }
+    }
   }
 }

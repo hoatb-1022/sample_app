@@ -1,6 +1,8 @@
 vi:
   global:
     rails-tut-app: "Ứng dụng mẫu để học Ruby on Rails"
+    the_form_contains: "Biểu mẫu chứa"
+    error: "lỗi"
     header:
       brand: "Ứng dụng mẫu"
       home: "Trang chủ"
@@ -23,3 +25,10 @@ vi:
                     <em>Hướng dẫn học Ruby on Rails</em> book
                   </a>
                   ."
+  users:
+    not_found: "Người dùng không tồn tại!"
+    new:
+      sign_up: "Đăng ký"
+      confirmation: "Xác nhận"
+      create_my_account: "Tạo tài khoản"
+      failed_create_account: "Tạo tài khoản thất bại"
