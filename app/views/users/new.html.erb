@@ -1,6 +1,6 @@
 <% provide :title, t(".sign_up") %>
-<div id="new-page">
-  <div class="signup-form">
+<div class="activation-page">
+  <div class="activation-form">
     <small><%= t "global.header.brand" %></small>
     <h2><%= t ".sign_up" %></h2>
     <%= render "shared/error_messages" %>
@@ -23,7 +23,7 @@
           <%= f.password_field :password_confirmation, class: "form-control" %>
         </div>
       </div>
-      <%= f.submit t(".create_my_account"), class: "btn btn-block btn-confirm-signup" %>
+      <%= f.submit t(".create_my_account"), class: "btn btn-block btn-confirm" %>
     <% end %>
   </div>
 </div>

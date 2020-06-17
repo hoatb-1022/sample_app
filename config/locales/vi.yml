@@ -8,6 +8,13 @@ vi:
       home: "Trang chủ"
       help: "Hỗ trợ"
       login: "Đăng nhập"
+  erors:
+    invalid_email_password_combination: "Email hoặc password không hợp lệ"
+  _header:
+    account: "Tài khoản"
+    profile: "Thông tin cá nhân"
+    settings: "Cài đặt"
+    logout: "Đăng xuất"
   static_pages:
     home:
       title: "Trang chủ"
@@ -32,3 +39,8 @@ vi:
       confirmation: "Xác nhận"
       create_my_account: "Tạo tài khoản"
       failed_create_account: "Tạo tài khoản thất bại"
+  sessions:
+    new:
+      log_in: "Đăng nhập"
+      new_user?: "Người dùng mới?"
+      sign_up_now!: "Đăng ký ngay!"

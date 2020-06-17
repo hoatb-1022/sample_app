@@ -19,6 +19,7 @@ class UsersController < ApplicationController
 
     if @user.save
       flash[:success] = t "static_pages.home.welcome"
+      log_in @user
       redirect_to @user
     else
       flash.now[:danger] = t ".new.failed_create_account"
