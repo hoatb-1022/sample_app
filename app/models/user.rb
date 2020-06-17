@@ -1,5 +1,7 @@
 class User < ApplicationRecord
-  attr_accessor :name, :email
+  # List of attributes will be permitted
+  PERMIT_ATTRIBUTES = %i(name email password password_confirmation)
+
   before_save :downcase_email
 
   validates :name, presence: true

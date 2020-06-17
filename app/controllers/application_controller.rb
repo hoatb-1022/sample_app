@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
 
   private
   def default_url_options
-    {locale: I18n.locale}
+    {locale: I18n.locale}.merge(super)
   end
 
   # Set locale for I18n

@@ -1,6 +1,8 @@
 en:
   global:
     rails-tut-app: "Ruby on Rails sample tutorial app"
+    the_form_contains: "The form contains"
+    error: "error"
     header:
       brand: "Sample App"
       home: "Home"
@@ -23,3 +25,10 @@ en:
                     <em>Ruby on Rails Tutorial</em> book
                   </a>
                   ."
+  users:
+    not_found: "User not found!"
+    new:
+      sign_up: "Sign up"
+      confirmation: "Confirmation"
+      create_my_account: "Create my account"
+      failed_create_account: "Failed to create account"
