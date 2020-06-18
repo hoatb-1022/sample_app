@@ -4,5 +4,9 @@
   <p class="lead">
     <%= t ".desc_html" %>
   </p>
-  <%= link_to t(".sign-up-now"), signup_path, class: "btn btn-primary" %>
+  <% if logged_in? %>
+    <%= link_to t(".go-to-yours"), current_user, class: "btn btn-primary" %>
+  <% else %>
+    <%= link_to t(".sign-up-now"), signup_path, class: "btn btn-primary" %>
+  <% end %>
 </div>
