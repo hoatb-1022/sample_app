@@ -1,0 +1,16 @@
+<% provide :title, t(".title") %>
+<div id="users-page" class="container py-5">
+  <h2 class="text-uppercase font-weight-bold text-muted text-center">
+    <%= t ".title" %>
+  </h2>
+  <hr>
+  <div class="mt-4">
+    <%= paginate @users  %>
+  </div>
+  <ul class="users row">
+    <%= render @users %>
+  </ul>
+  <div class="mt-4">
+    <%= paginate @users %>
+  </div>
+</div>

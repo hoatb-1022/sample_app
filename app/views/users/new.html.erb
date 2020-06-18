@@ -1,29 +1,9 @@
 <% provide :title, t(".sign_up") %>
+<% provide :button_text, t(".create_my_account") %>
 <div class="activation-page">
   <div class="activation-form">
-    <small><%= t "global.header.brand" %></small>
+    <small><%= t "_header.brand" %></small>
     <h2><%= t ".sign_up" %></h2>
-    <%= render "shared/error_messages" %>
-    <%= form_for @user, url: signup_path do |f| %>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <%= f.label :name %>
-          <%= f.text_field :name, class: "form-control" %>
-        </div>
-        <div class="form-group col-md-6">
-          <%= f.label :email %>
-          <%= f.email_field :email, class: "form-control" %>
-        </div>
-        <div class="form-group col-md-6">
-          <%= f.label :password %>
-          <%= f.password_field :password, class: "form-control" %>
-        </div>
-        <div class="form-group col-md-6">
-          <%= f.label :password_confirmation, t(".confirmation") %>
-          <%= f.password_field :password_confirmation, class: "form-control" %>
-        </div>
-      </div>
-      <%= f.submit t(".create_my_account"), class: "btn btn-block btn-confirm" %>
-    <% end %>
+    <%= render "shared/form" %>
   </div>
 </div>

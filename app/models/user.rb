@@ -11,9 +11,10 @@ class User < ApplicationRecord
             length: {maximum: Settings.user.email.max_length},
             format: {with: URI::MailTo::EMAIL_REGEXP},
             uniqueness: true
-  validates :password, presence: true, length: {minimum: Settings.user.password.min_length}
+  validates :password, presence: true, length: {minimum: Settings.user.password.min_length}, allow_nil: true
 
   has_secure_password
+  paginates_per Settings.user.per_page
 
   # Check if remembered token is correct password
   def authenticated? remember_token

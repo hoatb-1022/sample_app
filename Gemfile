@@ -15,8 +15,10 @@ gem "rails-i18n"
 gem "sprockets-rails", "~> 3.2", ">= 3.2.1"
 gem "jquery-rails", "~> 4.4"
 gem "bootstrap", "~> 4.5"
-gem "bcrypt", "~> 3.1", ">= 3.1.13"
 gem "config", "~> 2.2", ">= 2.2.1"
+gem "bcrypt", "~> 3.1", ">= 3.1.13"
+gem "faker", "~> 2.12"
+gem "kaminari", "~> 1.2", ">= 1.2.1"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]

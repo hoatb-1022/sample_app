@@ -1,13 +1,16 @@
 <header id="header" class="navbar navbar-expand-lg navbar-dark fixed-top">
   <div class="container">
-    <%= link_to t("global.header.brand"), root_url, id: "logo", class: "navbar-brand" %>
+    <%= link_to t("_header.brand"), root_url, id: "logo", class: "navbar-brand" %>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <%= link_to t("global.header.home"), root_url, class: "nav-link" %>
+          <%= link_to t("_header.home"), root_url, class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to t("global.header.help"), static_pages_help_path, class: "nav-link" %>
+          <%= link_to t("_header.help"), static_pages_help_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to t("_header.users"), users_path, class: "nav-link" %>
         </li>
         <% if logged_in? %>
           <li class="nav-item dropdown">
@@ -15,14 +18,14 @@
                         role: "button", "aria-haspopup": "true", "aria-expanded": "false" %>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <%= link_to t("_header.profile"), current_user, class: "dropdown-item" %>
-              <%= link_to t("_header.settings"), "#", class: "dropdown-item" %>
+              <%= link_to t("_header.settings"), edit_user_path(current_user), class: "dropdown-item" %>
               <div class="dropdown-divider"></div>
               <%= link_to t("_header.logout"), logout_path, method: :delete, class: "dropdown-item" %>
             </div>
           </li>
         <% else %>
           <li class="nav-item">
-            <%= link_to t("global.header.login"), login_path, class: "btn btn-outline-light ml-2" %>
+            <%= link_to t("_header.login"), login_path, class: "btn btn-outline-light ml-2" %>
           </li>
         <% end %>
       </ul>
