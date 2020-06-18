@@ -14,6 +14,12 @@
           <%= f.password_field :password, class: "form-control", required: true %>
         </div>
       </div>
+      <div class="form-group form-check">
+        <%= f.check_box :remember_me, class: "form-check-input" %>
+        <%= f.label :remember_me, class: "form-check-label" do %>
+          <%= t (".remember_me") %>
+        <% end %>
+      </div>
       <%= f.submit t(".log_in"), class: "btn btn-block btn-confirm" %>
     <% end %>
     <p class="text-right mt-3"><%= t ".new_user?" %> <%= link_to t(".sign_up_now!"), signup_path %></p>

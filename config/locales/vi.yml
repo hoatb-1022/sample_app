@@ -21,6 +21,7 @@ vi:
       desc_html: "Đây là trang chủ của ứng dụng mẫu
                   <a href=\"http://www.railstutorial.org/\" target=\"_blank\">Hướng dẫn học Ruby on Rails</a>
                   ."
+      go-to-yours: "Tới trang của bạn"
       sign-up-now: "Đăng ký ngay!"
       welcome: "Chào mừng đến với Ứng dụng mẫu"
     help:
@@ -39,8 +40,11 @@ vi:
       confirmation: "Xác nhận"
       create_my_account: "Tạo tài khoản"
       failed_create_account: "Tạo tài khoản thất bại"
+    show:
+      login_to_see: "Vui lòng đăng nhập để xem chi tiết tài khoản của bạn"
   sessions:
     new:
       log_in: "Đăng nhập"
       new_user?: "Người dùng mới?"
       sign_up_now!: "Đăng ký ngay!"
+      remember_me: "Ghi nhớ đăng nhập"

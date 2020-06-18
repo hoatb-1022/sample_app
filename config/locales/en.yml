@@ -21,6 +21,7 @@ en:
       desc_html: "This is the home page for the
                   <a href=\"http://www.railstutorial.org/\" target=\"_blank\">Ruby on Rails Tutorial</a>
                   sample application."
+      go-to-yours: "Go to your page"
       sign-up-now: "Sign up now!"
       welcome: "Welcome to the Sample App"
     help:
@@ -39,8 +40,11 @@ en:
       confirmation: "Confirmation"
       create_my_account: "Create my account"
       failed_create_account: "Failed to create account"
+    show:
+      login_to_see: "Please login to see your account info"
   sessions:
     new:
       log_in: "Log in"
       new_user?: "New user?"
       sign_up_now!: "Sign up now!"
+      remember_me: "Remember me"

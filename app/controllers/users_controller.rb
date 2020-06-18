@@ -1,11 +1,11 @@
 class UsersController < ApplicationController
+  before_action :check_login, only: :show
   def index; end
 
   def show
     @user = User.find_by id: params[:id]
 
     return if @user
-    # Handle when user not found
     flash[:danger] = t ".not_found"
     redirect_to root_url
   end
@@ -31,5 +31,11 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit User::PERMIT_ATTRIBUTES
+  end
+
+  def check_login
+    return if logged_in?
+    flash[:danger] = t ".show.login_to_see"
+    redirect_to root_url
   end
 end
