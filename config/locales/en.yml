@@ -8,6 +8,13 @@ en:
       home: "Home"
       help: "Help"
       login: "Log in"
+  erors:
+    invalid_email_password_combination: "Invalid email or password"
+  _header:
+    account: "Account"
+    profile: "Profile"
+    settings: "Settings"
+    logout: "Log out"
   static_pages:
     home:
       title: "Home"
@@ -32,3 +39,8 @@ en:
       confirmation: "Confirmation"
       create_my_account: "Create my account"
       failed_create_account: "Failed to create account"
+  sessions:
+    new:
+      log_in: "Log in"
+      new_user?: "New user?"
+      sign_up_now!: "Sign up now!"

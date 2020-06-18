@@ -1,0 +1,21 @@
+<% provide :title, t(".log_in") %>
+<div class="activation-page">
+  <div class="activation-form">
+    <small><%= t "global.header.brand" %></small>
+    <h2><%= t ".log_in" %></h2>
+    <%= form_for :session, url: login_path do |f| %>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <%= f.label :email %>
+          <%= f.email_field :email, class: "form-control", required: true %>
+        </div>
+        <div class="form-group col-md-6">
+          <%= f.label :password %>
+          <%= f.password_field :password, class: "form-control", required: true %>
+        </div>
+      </div>
+      <%= f.submit t(".log_in"), class: "btn btn-block btn-confirm" %>
+    <% end %>
+    <p class="text-right mt-3"><%= t ".new_user?" %> <%= link_to t(".sign_up_now!"), signup_path %></p>
+  </div>
+</div>
