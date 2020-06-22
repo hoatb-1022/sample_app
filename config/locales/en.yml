@@ -3,14 +3,14 @@ en:
     rails-tut-app: "Ruby on Rails sample tutorial app"
     the_form_contains: "The form contains"
     error: "error"
-    header:
-      brand: "Sample App"
-      home: "Home"
-      help: "Help"
-      login: "Log in"
   erors:
     invalid_email_password_combination: "Invalid email or password"
   _header:
+    brand: "Sample App"
+    home: "Home"
+    help: "Help"
+    login: "Log in"
+    users: "Users"
     account: "Account"
     profile: "Profile"
     settings: "Settings"
@@ -35,16 +35,34 @@ en:
                   ."
   users:
     not_found: "User not found!"
+    confirmation: "Confirmation"
+    please_login: "Please log in"
+    index:
+      title: "Users"
     new:
       sign_up: "Sign up"
-      confirmation: "Confirmation"
       create_my_account: "Create my account"
       failed_create_account: "Failed to create account"
-    show:
-      login_to_see: "Please login to see your account info"
+    edit:
+      change: "Change"
+      delete: "Delete"
+      edit_user: "Edit user"
+      save_changes: "Save changes"
+      profile_updated: "Profile updated"
+      failed_update_profile: "Failed to update profile"
+      you_sure?: "You sure?"
+      user_deleted: "User is deleted"
+      failed_delete_user: "Failed to delete user"
   sessions:
     new:
       log_in: "Log in"
       new_user?: "New user?"
       sign_up_now!: "Sign up now!"
       remember_me: "Remember me"
+  views:
+    pagination:
+      first: "First"
+      last: "Last"
+      next: "Next"
+      previous: "Previous"
+      truncate: "Truncate"

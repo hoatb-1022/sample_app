@@ -3,14 +3,14 @@ vi:
     rails-tut-app: "Ứng dụng mẫu để học Ruby on Rails"
     the_form_contains: "Biểu mẫu chứa"
     error: "lỗi"
-    header:
-      brand: "Ứng dụng mẫu"
-      home: "Trang chủ"
-      help: "Hỗ trợ"
-      login: "Đăng nhập"
   erors:
     invalid_email_password_combination: "Email hoặc password không hợp lệ"
   _header:
+    brand: "Ứng dụng mẫu"
+    home: "Trang chủ"
+    help: "Hỗ trợ"
+    login: "Đăng nhập"
+    users: "Danh sách người dùng"
     account: "Tài khoản"
     profile: "Thông tin cá nhân"
     settings: "Cài đặt"
@@ -35,16 +35,34 @@ vi:
                   ."
   users:
     not_found: "Người dùng không tồn tại!"
+    confirmation: "Xác nhận"
+    please_login: "Vui lòng đăng nhập"
+    index:
+      title: "Danh sách người dùng"
     new:
       sign_up: "Đăng ký"
-      confirmation: "Xác nhận"
       create_my_account: "Tạo tài khoản"
       failed_create_account: "Tạo tài khoản thất bại"
-    show:
-      login_to_see: "Vui lòng đăng nhập để xem chi tiết tài khoản của bạn"
+    edit:
+      change: "Thay đổi"
+      delete: "Xoá"
+      edit_user: "Sửa thông tin người dùng"
+      save_changes: "Lưu thay đổi"
+      profile_updated: "Thông tin đã được cập nhật"
+      failed_update_profile: "Cập nhật thông tin thất bại"
+      you_sure?: "Bạn chắc chắn?"
+      user_deleted: "Người dùng đã bị xoá"
+      failed_delete_user: "Xoá người dùng thất bại"
   sessions:
     new:
       log_in: "Đăng nhập"
       new_user?: "Người dùng mới?"
       sign_up_now!: "Đăng ký ngay!"
       remember_me: "Ghi nhớ đăng nhập"
+  views:
+    pagination:
+      first: "Đầu"
+      last: "Cuối"
+      next: "Tiếp"
+      previous: "Trước"
+      truncate: "Rút gọn"
