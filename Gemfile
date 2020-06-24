@@ -19,6 +19,7 @@ gem "config", "~> 2.2", ">= 2.2.1"
 gem "bcrypt", "~> 3.1", ">= 3.1.13"
 gem "faker", "~> 2.12"
 gem "kaminari", "~> 1.2", ">= 1.2.1"
+gem "figaro", "~> 1.2"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
