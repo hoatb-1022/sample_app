@@ -1,0 +1,22 @@
+<% provide :title, t(".reset_pass") %>
+<div class="activation-page">
+  <div class="activation-form">
+    <small><%= t "_header.brand" %></small>
+    <h2><%= t ".reset_pass" %></h2>
+    <%= render "shared/error_messages" %>
+    <%= form_for @user, url: password_reset_path(params[:id]) do |f| %>
+      <%= hidden_field_tag :email, @user.email %>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <%= f.label :password %>
+          <%= f.password_field :password, class: "form-control" %>
+        </div>
+        <div class="form-group col-md-6">
+          <%= f.label :password_confirmation, t(".confirmation") %>
+          <%= f.password_field :password_confirmation, class: "form-control" %>
+        </div>
+      </div>
+      <%= f.submit t(".update_pass"), class: "btn btn-block btn-confirm" %>
+    <% end %>
+  </div>
+</div>

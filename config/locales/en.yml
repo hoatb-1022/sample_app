@@ -60,9 +60,23 @@ en:
       new_user?: "New user?"
       sign_up_now!: "Sign up now!"
       remember_me: "Remember me"
+      forget_pass?: "Forget password?"
   account_activations:
     acc_activated: "Account activated"
     invalid_active_link: "Invalid account activate link"
+  password_resets:
+    new:
+      forgot_pass: "Forgot password"
+      submit: "Submit"
+    create:
+      mail_sent: "Email sent with password reset instructions"
+      mail_not_found: "Email address not found"
+    edit:
+      reset_pass: "Reset password"
+      update_pass: "Update password"
+    update:
+      reset_pass_success: "Successfully reset password"
+      reset_pass_failed: "Failed to reset password"
   views:
     pagination:
       first: "First"
@@ -74,4 +88,12 @@ en:
     account_activation:
       subject: "Account activation"
       welcome_html: "<p>Hi %{user_name},</p> <p>Welcome to the Sample App! Click on the link below to activate your account:</p>"
+      welcome_text: "Hi %{user_name}, Welcome to the Sample App! Click on the link below to activate your account:"
       activate_now: "Active now"
+    password_reset:
+      subject: "Password reset"
+      reset_html: "<p>To reset your password click the link below:</p>"
+      reset_text: "To reset your password click the link below:"
+      reset_desc_html: "<i><p>This link will expire in two hours. If you did not request your password to be reset.</p><p>Please ignore this email and your password will stay as it is.</p></i>"
+      reset_desc_text: "This link will expire in two hours. If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+      reset_pass_now: "Reset password now"

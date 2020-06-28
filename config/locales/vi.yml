@@ -60,9 +60,24 @@ vi:
       new_user?: "Người dùng mới?"
       sign_up_now!: "Đăng ký ngay!"
       remember_me: "Ghi nhớ đăng nhập"
+      forget_pass?: "Quên mật khẩu?"
   account_activations:
     acc_activated: "Tài khoản đã được kích hoạt"
     invalid_active_link: "Đường dẫn kích hoạt không hợp lệ"
+  password_resets:
+    new:
+      forgot_pass: "Quên mật khẩu"
+      submit: "Xác nhận"
+    create:
+      mail_sent: "Email khởi tạo lại mật khẩu đã được gửi tới bạn"
+      mail_not_found: "Email không tồn tại"
+    edit:
+      reset_pass: "Đặt lại mật khẩu"
+      confirmation: "Xác nhận"
+      update_pass: "Cập nhật mật khẩu"
+    update:
+      reset_pass_success: "Đặt lại mật khẩu thành công"
+      reset_pass_failed: "Đặt lại mật khẩu thất bại"
   views:
     pagination:
       first: "Đầu"
@@ -73,5 +88,13 @@ vi:
   user_mailer:
     account_activation:
       subject: "Kích hoạt tài khoản"
-      welcome_html: "<p>Xin chào %{user_name},</p> <p>Chào mừng tới Ứng dụng mẫu! Vui lòng bấm vào đường dẫn phía dưới để kích hoạt tài khoản:</p>"
+      welcome_html: "<p>Xin chào %{user_name},</p> <p>chào mừng tới Ứng dụng mẫu! Vui lòng bấm vào đường dẫn phía dưới để kích hoạt tài khoản:</p>"
+      welcome_text: "Xin chào %{user_name}, chào mừng tới Ứng dụng mẫu! Vui lòng bấm vào đường dẫn phía dưới để kích hoạt tài khoản:"
       activate_now: "Kích hoat ngay"
+    password_reset:
+      subject: "Đặt lại mật khẩu"
+      reset_html: "<p>Bấm vào link dưới để đặt lại mật khẩu:</p>"
+      reset_text: "Bấm vào link dưới để đặt lại mật khẩu:"
+      reset_desc_html: "<i><p>Đường dẫn có hiệu lực trong 2 tiếng. Nếu bạn không phải người yêu cầu.</p><p>Hãy bỏ qua email này và mật khẩu của bạn sẽ không thay đổi.</p></i>"
+      reset_desc_text: "Đường dẫn có hiệu lực trong 2 tiếng. Nếu bạn không phải người yêu cầu, hãy bỏ qua email này và mật khẩu của bạn sẽ không thay đổi."
+      reset_pass_now: "Đặt lại mật khẩu ngay"
