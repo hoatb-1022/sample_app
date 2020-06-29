@@ -54,11 +54,15 @@ vi:
       user_deleted: "Người dùng đã bị xoá"
       failed_delete_user: "Xoá người dùng thất bại"
   sessions:
+    check_active_mail: "Vui lòng kiểm tra email của bạn để kích hoạt tài khoản"
     new:
       log_in: "Đăng nhập"
       new_user?: "Người dùng mới?"
       sign_up_now!: "Đăng ký ngay!"
       remember_me: "Ghi nhớ đăng nhập"
+  account_activations:
+    acc_activated: "Tài khoản đã được kích hoạt"
+    invalid_active_link: "Đường dẫn kích hoạt không hợp lệ"
   views:
     pagination:
       first: "Đầu"
@@ -66,3 +70,8 @@ vi:
       next: "Tiếp"
       previous: "Trước"
       truncate: "Rút gọn"
+  user_mailer:
+    account_activation:
+      subject: "Kích hoạt tài khoản"
+      welcome_html: "<p>Xin chào %{user_name},</p> <p>Chào mừng tới Ứng dụng mẫu! Vui lòng bấm vào đường dẫn phía dưới để kích hoạt tài khoản:</p>"
+      activate_now: "Kích hoat ngay"

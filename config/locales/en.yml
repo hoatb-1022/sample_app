@@ -54,11 +54,15 @@ en:
       user_deleted: "User is deleted"
       failed_delete_user: "Failed to delete user"
   sessions:
+    check_active_mail: "Please check your email to activate account"
     new:
       log_in: "Log in"
       new_user?: "New user?"
       sign_up_now!: "Sign up now!"
       remember_me: "Remember me"
+  account_activations:
+    acc_activated: "Account activated"
+    invalid_active_link: "Invalid account activate link"
   views:
     pagination:
       first: "First"
@@ -66,3 +70,8 @@ en:
       next: "Next"
       previous: "Previous"
       truncate: "Truncate"
+  user_mailer:
+    account_activation:
+      subject: "Account activation"
+      welcome_html: "<p>Hi %{user_name},</p> <p>Welcome to the Sample App! Click on the link below to activate your account:</p>"
+      activate_now: "Active now"
