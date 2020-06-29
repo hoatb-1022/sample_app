@@ -1,0 +1,10 @@
+<%= render "shared/error_messages", object: @micropost %>
+<%= form_for @micropost do |f| %>
+  <div class="form-group">
+    <%= f.text_area :content, placeholder: t("global.compose_new_post"), class: "form-control" %>
+  </div>
+  <span class="image">
+    <%= f.file_field :image, accept: "image/jpeg,image/gif,image/png" %>
+  </span>
+  <%= f.submit t("global.post"), class: "btn btn-block btn-confirm" %>
+<% end %>

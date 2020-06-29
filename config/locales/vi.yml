@@ -3,6 +3,15 @@ vi:
     rails-tut-app: "Ứng dụng mẫu để học Ruby on Rails"
     the_form_contains: "Biểu mẫu chứa"
     error: "lỗi"
+    microposts: "Microposts"
+    feed: "Micropost Feeds"
+    compose_new_post: "Soạn micropost mới..."
+    posted_ago: "Đã đăng %{time} trước"
+    post: "Đăng"
+    please_login: "Vui lòng đăng nhập"
+    view_profile: "Xem trang cá nhân"
+    you_sure?: "Bạn chắc chắn?"
+    delete: "Xoá"
   erors:
     invalid_email_password_combination: "Email hoặc password không hợp lệ"
   _header:
@@ -36,7 +45,6 @@ vi:
   users:
     not_found: "Người dùng không tồn tại!"
     confirmation: "Xác nhận"
-    please_login: "Vui lòng đăng nhập"
     index:
       title: "Danh sách người dùng"
     new:
@@ -45,12 +53,10 @@ vi:
       failed_create_account: "Tạo tài khoản thất bại"
     edit:
       change: "Thay đổi"
-      delete: "Xoá"
       edit_user: "Sửa thông tin người dùng"
       save_changes: "Lưu thay đổi"
       profile_updated: "Thông tin đã được cập nhật"
       failed_update_profile: "Cập nhật thông tin thất bại"
-      you_sure?: "Bạn chắc chắn?"
       user_deleted: "Người dùng đã bị xoá"
       failed_delete_user: "Xoá người dùng thất bại"
   sessions:
@@ -78,6 +84,13 @@ vi:
     update:
       reset_pass_success: "Đặt lại mật khẩu thành công"
       reset_pass_failed: "Đặt lại mật khẩu thất bại"
+  microposts:
+    success_created: "Đã tạo micropost thành công"
+    success_deleted: "Đã xoá micropost thành công"
+    failed_deleted: "Đã xoá micropost thất bại"
+    valid_image_format!: "Ảnh cần đúng định dạng"
+    valid_image_size!: "Ảnh phải nhỏ hơn 5MB"
+    alert_size_exceeded: "Dung lượng tối đa là 5MB. Vui lòng chọn ảnh nhỏ hơn."
   views:
     pagination:
       first: "Đầu"

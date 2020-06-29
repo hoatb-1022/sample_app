@@ -1,0 +1,16 @@
+<li id="micropost-<%= micropost.id %>">
+  <%= link_to gravatar_for(micropost.user, size: Settings.user.gravatar_size), micropost.user %>
+  <div>
+    <span class="d-block user"><%= link_to micropost.user.name, micropost.user %></span>
+    <span class="d-block content">
+      <%= micropost.content %>
+      <%= image_tag(micropost.image, class: "img-fluid my-3 rounded") if micropost.image.attached? %>
+    </span>
+    <span class="d-block timestamp">
+      <%= t "global.posted_ago", time: time_ago_in_words(micropost.created_at) %>
+    </span>
+    <% if current_user? micropost.user %>
+      <%= link_to t("global.delete"), micropost, method: :delete, data: {confirm: t("global.you_sure?")}, class: "btn btn-danger btn-sm mt-3" %>
+    <% end %>
+  </div>
+</li>

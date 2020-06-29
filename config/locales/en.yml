@@ -3,6 +3,15 @@ en:
     rails-tut-app: "Ruby on Rails sample tutorial app"
     the_form_contains: "The form contains"
     error: "error"
+    microposts: "Microposts"
+    feed: "Micropost Feeds"
+    compose_new_post: "Compose new micropost..."
+    posted_ago: "Posted %{time} ago"
+    post: "Post"
+    please_login: "Please log in"
+    view_profile: "View my profile"
+    you_sure?: "You sure?"
+    delete: "Delete"
   erors:
     invalid_email_password_combination: "Invalid email or password"
   _header:
@@ -36,7 +45,6 @@ en:
   users:
     not_found: "User not found!"
     confirmation: "Confirmation"
-    please_login: "Please log in"
     index:
       title: "Users"
     new:
@@ -45,12 +53,10 @@ en:
       failed_create_account: "Failed to create account"
     edit:
       change: "Change"
-      delete: "Delete"
       edit_user: "Edit user"
       save_changes: "Save changes"
       profile_updated: "Profile updated"
       failed_update_profile: "Failed to update profile"
-      you_sure?: "You sure?"
       user_deleted: "User is deleted"
       failed_delete_user: "Failed to delete user"
   sessions:
@@ -73,10 +79,18 @@ en:
       mail_not_found: "Email address not found"
     edit:
       reset_pass: "Reset password"
+      confirmation: "Confirmation"
       update_pass: "Update password"
     update:
       reset_pass_success: "Successfully reset password"
       reset_pass_failed: "Failed to reset password"
+  microposts:
+    success_created: "Successfully create micropost"
+    success_deleted: "Successfully delete micropost"
+    failed_deleted: "Failed to delete micropost"
+    valid_image_format!: "must be a valid image format"
+    valid_image_size!: "must be a less than 5MB"
+    alert_size_exceeded: "Maximum file size is 5MB. Please choose a smaller file."
   views:
     pagination:
       first: "First"

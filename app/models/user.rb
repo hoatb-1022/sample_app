@@ -3,8 +3,8 @@ class User < ApplicationRecord
   PERMIT_ATTRIBUTES = %i(name email password password_confirmation)
 
   attr_accessor :remember_token, :activation_token, :reset_token
-  before_save :downcase_email
-  before_create :create_activation_digest
+
+  has_many :microposts, dependent: :destroy
 
   validates :name, presence: true
   validates :email,
@@ -13,6 +13,9 @@ class User < ApplicationRecord
             format: {with: URI::MailTo::EMAIL_REGEXP},
             uniqueness: true
   validates :password, presence: true, length: {minimum: Settings.user.password.min_length}, allow_nil: true
+
+  before_save :downcase_email
+  before_create :create_activation_digest
 
   has_secure_password
   paginates_per Settings.user.per_page
@@ -54,6 +57,10 @@ class User < ApplicationRecord
   # Send reset password email
   def send_password_reset_email
     UserMailer.password_reset(self).deliver_now
+  end
+
+  def feed
+    microposts
   end
 
   class << self

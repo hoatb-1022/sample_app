@@ -1,12 +1,29 @@
 <% provide :title, t(".title") %>
-<div id="home-jumbo" class="jumbotron text-center">
-  <h1 class="display-4 mb-3"><%= t ".welcome" %></h1>
-  <p class="lead">
-    <%= t ".desc_html" %>
-  </p>
-  <% if logged_in? %>
-    <%= link_to t(".go-to-yours"), current_user, class: "btn btn-primary" %>
-  <% else %>
+
+<% if logged_in? %>
+  <div class="container py-5">
+    <div class="row">
+      <aside class="col-md-4">
+        <section class="mb-4">
+          <%= render "shared/user_info" %>
+        </section>
+        <section class="micropost_form">
+          <%= render "shared/micropost_form" %>
+        </section>
+      </aside>
+      <div class="col-md-8">
+        <h4 class="text-muted"><%= t "global.feed" %></h4>
+        <hr>
+        <%= render "shared/feed" %>
+      </div>
+    </div>
+  </div>
+<% else %>
+  <div id="home-jumbo" class="jumbotron text-center">
+    <h1 class="display-4 mb-3"><%= t ".welcome" %></h1>
+    <p class="lead">
+      <%= t ".desc_html" %>
+    </p>
     <%= link_to t(".sign-up-now"), signup_path, class: "btn btn-primary" %>
-  <% end %>
-</div>
+  </div>
+<% end %>
