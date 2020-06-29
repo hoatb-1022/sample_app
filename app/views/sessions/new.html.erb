@@ -17,11 +17,14 @@
       <div class="form-group form-check">
         <%= f.check_box :remember_me, class: "form-check-input" %>
         <%= f.label :remember_me, class: "form-check-label" do %>
-          <%= t (".remember_me") %>
+          <%= t ".remember_me" %>
         <% end %>
       </div>
       <%= f.submit t(".log_in"), class: "btn btn-block btn-confirm" %>
     <% end %>
-    <p class="text-right mt-3"><%= t ".new_user?" %> <%= link_to t(".sign_up_now!"), signup_path %></p>
+    <div class="d-flex justify-content-between align-items-center mt-3">
+      <%= link_to t(".forget_pass?"), new_password_reset_path %>
+      <p class="text-right mt-3"><%= t ".new_user?" %> <%= link_to t(".sign_up_now!"), signup_path %></p>
+    </div>
   </div>
 </div>

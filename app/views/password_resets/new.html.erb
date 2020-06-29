@@ -1,0 +1,14 @@
+<% provide :title, t(".forgot_pass") %>
+<div class="activation-page">
+  <div class="activation-form">
+    <small><%= t "_header.brand" %></small>
+    <h2><%= t ".forgot_pass" %></h2>
+    <%= form_for :password_reset, url: password_resets_path do |f| %>
+      <div class="form-group">
+        <%= f.label :email %>
+        <%= f.email_field :email, class: "form-control", required: true %>
+      </div>
+      <%= f.submit t(".submit"), class: "btn btn-block btn-confirm" %>
+    <% end %>
+  </div>
+</div>
