@@ -91,6 +91,13 @@ vi:
     valid_image_format!: "Ảnh cần đúng định dạng"
     valid_image_size!: "Ảnh phải nhỏ hơn 5MB"
     alert_size_exceeded: "Dung lượng tối đa là 5MB. Vui lòng chọn ảnh nhỏ hơn."
+  relationships:
+    following: "Đang theo dõi"
+    followers: "Người theo dõi"
+    follow: "Theo dõi"
+    unfollow: "Bỏ theo dõi"
+    failed_follow: "Theo dõi thất bại"
+    failed_unfollow: "Bỏ theo dõi thất bại"
   views:
     pagination:
       first: "Đầu"

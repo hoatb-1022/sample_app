@@ -1,4 +1,4 @@
-<li class="col-lg-4 col-md-6">
+<li class="<%= classes ||= "col-lg-4 col-md-6" %>">
   <div class="user-item">
     <%= gravatar_for user, size: Settings.user.gravatar_size %>
     <%= link_to user.name, user, class: "user-item--name" %>
