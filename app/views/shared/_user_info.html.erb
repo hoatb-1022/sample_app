@@ -1,0 +1,8 @@
+<section class="user_info">
+  <%= link_to gravatar_for(current_user, size: Settings.user.gravatar_size), current_user %>
+  <div>
+    <span class="user_info--name"><%= current_user.name %></span>
+    <span><%= link_to t("global.view_profile"), current_user %></span>
+    <span class="text-muted"><%= pluralize current_user.microposts.count, "micropost" %></span>
+  </div>
+</section>

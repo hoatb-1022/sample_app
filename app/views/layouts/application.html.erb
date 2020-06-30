@@ -8,6 +8,8 @@
 
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload" %>
     <%= javascript_pack_tag "application", "data-turbolinks-track": "reload" %>
+    <%= javascript_include_tag "i18n" %>
+    <%= javascript_include_tag "translations", skip_pipeline: true %>
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,700;1,800&display=swap" rel="stylesheet">
   </head>
@@ -16,11 +18,19 @@
     <%= render "layouts/header" %>
     <div class="app-content">
       <% flash.each do |message_type, message| %>
-        <div class="alert alert-<%= message_type %> fixed-bottom mb-0 rounded-0" role="alert">
+        <div class="alert alert-<%= message_type %> alert-dismissible fade show fixed-bottom mb-0 rounded-0" role="alert">
           <%= message %>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
       <% end %>
       <%= yield %>
     </div>
+
+    <script type="text/javascript">
+      I18n.defaultLocale = "<%= I18n.default_locale %>"
+      I18n.locale = "<%= I18n.locale %>"
+    </script>
   </body>
 </html>

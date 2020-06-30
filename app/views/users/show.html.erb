@@ -4,14 +4,22 @@
     <div class="row">
       <aside class="col-md-4">
         <section class="user_info">
-          <h3>
-            <%= gravatar_for @user %>
-            <span class="user_info--name">
-              <%= @user.name %>
-            </span>
-          </h3>
+          <%= gravatar_for @user %>
+          <span class="user_info--name">
+            <%= @user.name %>
+          </span>
         </section>
       </aside>
+      <div class="col-md-8">
+        <% if @user.microposts.any? %>
+          <h4 class="text-muted"><%= t "global.microposts" %> (<%= @user.microposts.count %>)</h4>
+          <hr>
+          <ol class="microposts">
+            <%= render @microposts %>
+          </ol>
+          <%= paginate @microposts %>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>

@@ -3,7 +3,7 @@
     <%= gravatar_for user, size: Settings.user.gravatar_size %>
     <%= link_to user.name, user, class: "user-item--name" %>
     <% if current_user.admin? && !current_user?(user) %>
-      <%= link_to t("users.edit.delete"), user, method: :delete, data: {confirm: t("users.edit.you_sure?")}, class: "btn btn-danger btn-sm btn-delete-user" %>
+      <%= link_to t("global.delete"), user, method: :delete, data: {confirm: t("global.you_sure?")}, class: "btn btn-danger btn-sm" %>
     <% end %>
   </div>
 </li>
