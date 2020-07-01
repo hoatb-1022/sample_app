@@ -91,6 +91,13 @@ en:
     valid_image_format!: "must be a valid image format"
     valid_image_size!: "must be a less than 5MB"
     alert_size_exceeded: "Maximum file size is 5MB. Please choose a smaller file."
+  relationships:
+    following: "Following"
+    followers: "Followers"
+    follow: "Follow"
+    unfollow: "Unfollow"
+    failed_follow: "Failed to follow"
+    failed_unfollow: "Failed to unfollow"
   views:
     pagination:
       first: "First"

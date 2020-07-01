@@ -3,11 +3,15 @@
   <div class="container py-5">
     <div class="row">
       <aside class="col-md-4">
-        <section class="user_info">
+        <section class="user_info mb-4">
           <%= gravatar_for @user %>
           <span class="user_info--name">
             <%= @user.name %>
           </span>
+        </section>
+        <%= render "shared/stats" %>
+        <section class="mt-3">
+          <%= render "follow_form" if logged_in? %>
         </section>
       </aside>
       <div class="col-md-8">
