@@ -21,7 +21,7 @@ gem "bcrypt", "~> 3.1", ">= 3.1.13"
 gem "faker", "~> 2.12"
 gem "kaminari", "~> 1.2", ">= 1.2.1"
 gem "figaro", "~> 1.2"
-gem "image_processing", "~> 1.11"
+gem "image_processing", "~> 1.12"
 gem "mini_magick", "~> 4.10", ">= 4.10.1"
 gem "active_storage_validations", "~> 0.8.9"
 
